@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc file.c -o file.exe
+gcc main.c -o c
