@@ -9,11 +9,11 @@
 
 int main(void)
 {
-        int i;
-        char x[26] = "0123456789abcdef";
+	int i;
+	char x[17] = "0123456789abcdef";
 
-        for (i = 0; i < 26; i++)
-        putchar(x[i]);
-        putchar('\n');
-        return (0);
+	for (i = 0; i < 26; i++)
+	putchar(x[i]);
+	putchar('\n');
+	return (0);
 }
