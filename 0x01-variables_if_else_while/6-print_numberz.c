@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	long int i =  0123456789;
+	int 0123456789;
 	
-	putchar('i');
+	putchar(0123456789);
 	putchar('\n');
 	return (0);
 }
