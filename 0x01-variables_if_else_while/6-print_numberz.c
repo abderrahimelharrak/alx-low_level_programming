@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i =  0123456789;
+	long int i =  0123456789;
 	
 	putchar('i');
 	putchar('\n');
