@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /* more headers goes there */
 /**
  * main - Entry point
@@ -10,13 +9,11 @@
 
 int main(void)
 {
-        int i;
-        char T[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+	chat t[26] = "abcdfghijklmnoprstuvwxuz";
 
-        for (i = 0; i < 26 ; i++)
-        {
-                putchar(T[i]);
-		putchar('\n');
-	}
-        return (0);
-}  
+	for(i = 0; i < 26; i++)
+	putchar(t[i]);
+	putchar('\n');
+	return (0);
+}
