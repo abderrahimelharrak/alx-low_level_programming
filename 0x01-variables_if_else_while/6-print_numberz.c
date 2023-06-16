@@ -9,9 +9,10 @@
 
 int main(void)
 {
-	int 0123456789;
+	int i;
 	
-	putchar(0123456789);
+	for (i = 48; i < 58; i++)
+	putchar(i);
 	putchar('\n');
 	return (0);
 }
