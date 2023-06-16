@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i;
-	char x[17] = "0123456789abcdef";
+	char x[16] = "0123456789abcdef";
 
-	for (i = 0; i < 17; i++)
+	for (i = 0; i < 16; i++)
 	putchar(x[i]);
 	putchar('\n');
 	return (0);
