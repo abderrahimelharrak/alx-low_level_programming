@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	chat t[26] = "abcdfghijklmnoprstuvwxuz";
+	char t[26] = "abcdfghijklmnoprstuvwxuz";
 
 	for(i = 0; i < 26; i++)
 	putchar(t[i]);
