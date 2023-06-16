@@ -11,12 +11,12 @@ int main(void)
 {
 	int x;
 
-	for (x = 48; x < 58; x++)
+	for (x = 48; x < 57; x++)
 	{
 		putchar(x);
 		putchar(',');
 		putchar(' ');
 	}
-	putchar('\n');
+	putchar('9');
 	return (0);
 }
