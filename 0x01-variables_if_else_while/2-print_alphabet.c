@@ -11,8 +11,9 @@
 int main(void)
 {
 	int i;
-	char T[26]= "abcdefghijklmnopqrstuvwxyz";
-	for (i=0; i < 26 ; i++)
+	char T[26] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (i = 0; i < 26 ; i++)
 	{
 		putchar(T[i]);
 	}
