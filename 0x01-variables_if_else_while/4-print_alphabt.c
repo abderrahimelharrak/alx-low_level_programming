@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i;
-	char t[26] = "abcdfghijklmnoprstuvwxuz";
+	char t[26] = "abcdfghijklmnoprstuvwxyz";
 
-	for(i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	putchar(t[i]);
 	putchar('\n');
 	return (0);
