@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i;
-	char t[9] = "0123456789";
+	char t[10] = "0123456789";
 	for (i = 0; i <10 ; i++)
 	putchar(t[i]);
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
