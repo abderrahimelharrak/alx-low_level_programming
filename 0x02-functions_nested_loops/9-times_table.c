@@ -7,8 +7,8 @@ void times_table(void)
 	int x, y, z;
 
 	for (x = 0; x < 10; x++)
-		{
-			for (y = 0 ;y < 10; y++)
+	{
+			for (y = 0 ; y < 10; y++)
 			{
 				z = y * x;
 				if (y == 0)
@@ -30,10 +30,7 @@ void times_table(void)
 					_putchar((z / 10) + '0');
 					_putchar((z % 10) + '0');
 				}
-			
 			}
-			
 			_putchar('\n');
-			
 		}
 }
