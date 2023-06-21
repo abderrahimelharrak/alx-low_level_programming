@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - return if an alphabet is lower or not
+ * _islower (char c) - return 1 if an alphabet is lower and 0 if not
  */
 int _islower(int c)
 {
