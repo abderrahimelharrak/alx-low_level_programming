@@ -23,5 +23,6 @@ int main(void)
 		if (n % 5 == 0)
 		printf("Buzz ");
 	}
+	printf("\n");
 	return (0);
 }
