@@ -9,29 +9,19 @@ int main(void)
 {
 	int n;
 
-	for (n = 0 ; n <= 100 ; n++)
+	for (n = 1 ; n <= 100 ; n++)
 	{
 		if (n % 3 != 0 && n % 5 != 0)
-		{
-			printf("%d", n);
-			printf(" ");
-		}
+		printf("%d ", n);
 		if (n % 3 == 0 && n % 5 == 0)
 		{
-			printf("FizzBuzz");
-			printf(" ");
+			printf("FizzBuzz ");
 			continue;
 		}
 		if (n % 3 == 0)
-		{
-			printf("Fizz");
-			printf(" ");
-		}
+		printf("Fizz ");
 		if (n % 5 == 0)
-		{
-			printf("Buzz");
-			printf(" ");
-		}
-		return (0);
+		printf("Buzz ");
 	}
+	return (0);
 }
