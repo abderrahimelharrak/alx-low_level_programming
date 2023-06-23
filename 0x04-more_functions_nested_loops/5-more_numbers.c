@@ -20,5 +20,5 @@ void more_numbers(void)
 		_putchar('\n');
 		i++;
 	}
-	_putchar('\n'à;
+	_putchar('\n');
 }
