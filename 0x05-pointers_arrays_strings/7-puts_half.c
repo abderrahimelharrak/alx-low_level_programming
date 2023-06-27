@@ -5,28 +5,19 @@
  * @str: the string to print
  */
 
-void puts_half(char *str)
+void puts_half(char str)
 {
+	char c;
+	int len, i;
 
-	int n = 0;
-	int z;
-
-	while (str[n] != '\n')
-	{
-		n++;
-	}
-	if (n % 2 == 1)
-	{
-		z = (n - 1) / 2;
-		z = z + 1;
-	}
+	for (c = str; *c != '\0' ; c++)
+	len = c - str;
+	if (len % 2 != 0)
+		_putchar(str[len - 1]);
 	else
 	{
-		z = n / 2;
-	}
-	for ( ; z < n; z++)
-	{
-		_putchar(str[z]);
+		for (i = len / 2 ; i < len ; i++)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
