@@ -17,12 +17,12 @@ void puts_half(char *str)
 	}
 	if (n % 2 == 1)
 	{
-		z = (j - 1) / 2;
+		z = (n - 1) / 2;
 		z++;
 	}
 	else
 	{
-		z = j / 2;
+		z = n / 2;
 	}
 	for ( ; z < n; z++)
 	{
