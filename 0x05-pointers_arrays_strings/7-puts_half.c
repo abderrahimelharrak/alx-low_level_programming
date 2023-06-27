@@ -8,9 +8,10 @@
 void puts_half(char *str)
 {
 	int i = _strlen(str);
+	int x;
 
 	x = (i / 2);
-	for ( ; *(s + x) != '\0' ; x++)
+	for ( ; *(str + x) != '\0' ; x++)
 	{
-		_putchar(*(s + x));
+		_putchar(*(str + x));
 	}
