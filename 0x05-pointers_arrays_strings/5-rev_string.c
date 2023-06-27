@@ -18,6 +18,6 @@ void rev_string(char *s)
 			y--;
 			swch = *(s + z);
 			*(s + z) = *(s + y);
-			*(s + y) = rev;
+			*(s + y) = swch;
 		}
 }
