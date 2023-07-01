@@ -10,8 +10,8 @@ char *cap_string(char *str)
 {
 	int i, y;
 	int cp = 32;
-	int separator[] = {',', ';', '.', '?', '"',
-			    '(', ')', '{', '}', ' ', '\n', '\t'};
+	int separator[] = {',', ';', '.', '?', '"', '(', ')', '{', '}', ' '
+		, '\n', '\t'};
 
 	for (i = 0; stp[i] != '\0'; i++)
 	{
