@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * rot13 - encode using rot13
- * @s: variable
- * Return: Always 0 (Success)
+ * @s: string
+ * Return: the string s
  */
 char *rot13(char *s)
 {
