@@ -8,42 +8,28 @@
 
 char *cap_string(char *str)
 {
-	int i = 0;
+	int i, x;
+	int cap = 32;
+	int separators[] = {',', ';', '.', '?', '"',
+			    '(', ')', '{', '}', ' ', '\n', '\t'};
 
-	while (str[i])
+	for (i = 0; str[i] != '\0'; i++)
 	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] = str[i] - cap;
+		}
 
-		while (!(str[i] >= 'a' && str[i] <= 'z')
-			i++;
-		if (i == 0)
-			i++;
-		if (str[i - 1] == ' ')
-			str[i] -= 32;
-		if (str[i - 1] == '\n')
-			str[i] -= 32;
-		if (str[i - 1] == ',')
-			str[i] -= 32;
-		if (str[i - 1] == '(')
-			str[i] -= 32;
-		if (str[i - 1] == ')')
-			str[i] -= 32;
-		if (str[i - 1] == '\t')
-			str[i] -= 32;
-		if (str[i - 1] == '.')
-			str[i] -= 32;
-		if (str[i - 1] == ';')
-			str[i] -= 32;
-		if (str[i - 1] == '!')
-			str[i] -= 32;
-		if (str[i - 1] == '?')
-			str[i] -= 32;
-		if (str[i - 1] == '{')
-			str[i] -= 32;
-		if (str[i - 1] == '}')
-			str[i] -= 32;
-		if (str[i - 1] == '"')
-			str[i] -= 32;
-		i++;
+		cap = 0;
+
+		for (x = 0; x <= 12; x++)
+		{
+			if (str[i] == separators[x])
+			{
+				x = 12;
+				cap = 32;
+			}
+		}
 	}
 	return (str);
 }
