@@ -3,14 +3,14 @@
 int _sqrt(int, int);
 
 /**
- * _sqrt_recursion = sqrt
+ * _sqrt_recursion - sqrt
  * @n: number
  * Return: sqrt of number n
  */
 
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n,1));
+	return (_sqrt(n, 1));
 }
 
 /**
@@ -30,6 +30,6 @@ int _sqrt(int n, int i)
 	if (s == n)
 		return (i);
 
-	return (_sqrt(n,i+1));
+	return (_sqrt(n, i + 1));
 
 }
