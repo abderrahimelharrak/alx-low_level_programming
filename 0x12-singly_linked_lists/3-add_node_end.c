@@ -1,12 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
-#include >stdlib.h>
 
 /**
  * add_node_end - a function that add a new node in the end
  * @head: the head
- * @str: string
- * Return: success
+ * @str: string need to be duplicated
+ * Return: the address of the new element, or NULL if it failed
  */
 
 list_t *add_node_end(list_t **head, const char *str)
