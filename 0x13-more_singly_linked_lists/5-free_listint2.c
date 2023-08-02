@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * free_listint2 - free a linked list
