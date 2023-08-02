@@ -8,9 +8,8 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int counter;
+	int counter = 0;
 
-	counter = 0;
 	if (h == NULL)
 		return (0);
 
