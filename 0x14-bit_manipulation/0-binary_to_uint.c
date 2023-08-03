@@ -8,15 +8,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int x = 0;
-	int the_base = 1, y;
+	int la_base = 1, y = 0;
 
 	if (b == NULL)
 		return (0);
 
-	for (y = 0; b[y + 1] != '\0' ; y++)
+	while (b[i + 1])
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[y] != '0')
 			return (0);
+		if (b[y] != '1')
+			return (0);
+		y++;
 	}
 
 	while (y >= 0)
@@ -25,7 +28,6 @@ unsigned int binary_to_uint(const char *b)
 		la_base *= 2;
 		y--;
 	}
-
 
 	return (x);
 
