@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int x = 0;
-	int la_base = 1, y = 0;
+	int y = 0;
 
 	if (b == NULL)
 		return (0);
@@ -24,8 +24,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (y >= 0)
 	{
-		x += ((b[y] - '0') * la_base);
-		la_base *= 2;
+		x = x * 2 + (*b++ - '0');
 		y--;
 	}
 
