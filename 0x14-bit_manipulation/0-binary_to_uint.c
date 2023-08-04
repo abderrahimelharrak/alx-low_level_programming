@@ -7,19 +7,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x = 0;
-	int y = 0;
+	unsigned int x;
 
+	x = 0;
 	if (b == NULL)
 		return (0);
 
-	while (b[y + 1])
+	while (*b)
 	{
-		if (b[y] != '0')
+		if (*b != '0')
 			return (0);
-		if (b[y] != '1')
+		if (*b != '1')
 			return (0);
-		y++;
 	}
 	x = x * 2 + (*b++ - '0');
 	return (x);
