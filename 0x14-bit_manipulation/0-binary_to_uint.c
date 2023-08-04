@@ -21,13 +21,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		y++;
 	}
-
-	while (y >= 0)
-	{
-		x = x * 2 + (*b++ - '0');
-		y--;
-	}
-
+	x = x * 2 + (*b++ - '0');
 	return (x);
 
 }
