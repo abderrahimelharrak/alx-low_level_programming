@@ -1,4 +1,9 @@
 #include "main.h"
+#include<stdio.h>
+
+int close_file(int file);
+int write_error(int file1, int file2, char *file_name);
+int read_error(int file1, int file2, char *file_name);
 
 /**
  * close_file - closes a file descriptor and prints
