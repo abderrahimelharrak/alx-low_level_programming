@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdio.h>
+#include <stdlib.h>
 
 int close_file(int file);
 int write_error(int file1, int file2, char *file_name);
