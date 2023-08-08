@@ -1,9 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 
 /**
  * create_file - creates a file and puts text in it
@@ -14,29 +9,27 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int x_fl;
-	int len, inlength;
-	char *tab;
+	int file, writ;
+	int length = 0;
 
-	len = 0;
-	inlength = 0;
 	if (filename == NULL)
-		return (-1);
-
-	x_fl = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
-
-	if (x_fl == -1)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (inlength = 0, tab = text_content; *tab; tab++)
-			inlen++;
-		len = write(x_fl, text_content, inlength);
+		while (text_content[length])
+			length++;
 	}
 
-	if (close(x_fl) == -1 || inlength != len)
+	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+
+	writ = write(file, text_content, length);
+
+	if (file == -1 || writ == -1)
 		return (-1);
 
+	close(file);
+
 	return (1);
+
 }
