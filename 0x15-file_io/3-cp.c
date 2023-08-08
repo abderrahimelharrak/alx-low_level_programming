@@ -1,6 +1,11 @@
 #include "main.h"
 #include<stdio.h>
 #include <stdlib.h>
+#define _GNU_SOURCE
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.H>
 
 int close_file(int file);
 int write_error(int file1, int file2, char *file_name);
