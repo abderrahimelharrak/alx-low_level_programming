@@ -4,6 +4,22 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+
+/**
+ * string_length - return the length of a string 
+ * @string: the string we work on
+ * Return: success
+ */
+int string_length(char *string)
+{
+	int x = 0;
+	if (!string)
+		return (0);
+	while (*string++)
+		x++;
+	return (x);
+}
+
 /**
  * append_text_to_file - Appends text at the end of a file.
  * @filename: the name of the file.
@@ -14,12 +30,8 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int file_d;
 	ssize_t x = 0;
-	int length = 0;
+	int length = string_length(text_content);
 
-	if (text_content == NULL)
-		length = 0;
-	while (*text_content)
-		length++;
 	if (!filename)
 		return (-1);
 	file_d = open(filename, O_WRONLY | O_APPEND);
