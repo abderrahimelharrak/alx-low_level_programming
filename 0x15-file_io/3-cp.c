@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <fcntl.H>
+#include <fcntl.h>
 
 int close_file(int file);
 int write_error(int file1, int file2, char *file_name);
@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 	do {
 		length_r = read(f_from, tab, 1024);
 		if (length_r == -1)
-			return (read_error(file_from, file_to, argv[1]));
+			return (read_error(f_from, f_to, argv[1]));
 
 		length_w = write(f_to, tab, length_r);
 		if (length_w == -1 || length_w != length_r)
