@@ -24,7 +24,6 @@ int close_file(int file)
 	}
 	return (0);
 }
-/********************************************/
 
 /**
  * write_error - write error
@@ -41,7 +40,6 @@ int write_error(int file1, int file2, char *file_name)
 	close_file(file2);
 	return (99);
 }
-/***********************************************************/
 
 /**
  * read_error - the handler for a read error
@@ -58,7 +56,6 @@ int read_error(int file1, int file2, char *file_name)
 	return (98);
 }
 
-/*******************************/
 /**
  * main - main code
  * @ac: teh number of arg
@@ -107,4 +104,3 @@ int main(int ac, char *av[])
 		return (100);
 	return (0);
 }
-
