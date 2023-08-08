@@ -6,13 +6,14 @@
 #include <sys/stat.h>
 
 /**
- * string_length - return the length of a string 
+ * string_length - return the length of a string
  * @string: the string we work on
  * Return: success
  */
 int string_length(char *string)
 {
 	int x = 0;
+
 	if (!string)
 		return (0);
 	while (*string++)
