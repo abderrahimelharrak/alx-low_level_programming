@@ -24,8 +24,6 @@ int close_file(int file)
 	}
 	return (0);
 }
-
-
 /********************************************/
 
 /**
@@ -109,3 +107,4 @@ int main(int ac, char *av[])
 		return (100);
 	return (0);
 }
+

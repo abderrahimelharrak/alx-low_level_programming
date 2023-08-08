@@ -12,5 +12,5 @@ int append_text_to_file(const char *filename, char *text_content);
 int close_file(int file);
 int write_error(int file1, int file2, char *file_name);
 int read_error(int file1, int file2, char *file_name);
-
+int _putchar(char c);
 #endif
