@@ -1,12 +1,12 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 
-/* Libraries */
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Structs */
+
 /**
  * struct hash_node_s - Node of a hash table
  *
