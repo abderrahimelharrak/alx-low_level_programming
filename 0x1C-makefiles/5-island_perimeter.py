@@ -10,7 +10,7 @@ def island_perimeter(grid):
     Args:
         grid (list): List of list of integers representes an island.
     Returns:
-        Success
+        Success.
     """
     l = len(grid[0])
     L = len(grid)
