@@ -19,7 +19,7 @@ int rec_search(int *array, size_t size, int value)
 	printf("Searching in array");
 
 	for (y = 0; y < size; y++)
-		printf("%s %d", (i == 0) ? ":" : ",", array[y]);
+		printf("%s %d", (y == 0) ? ":" : ",", array[y]);
 
 	printf("\n");
 
